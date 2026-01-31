@@ -3,12 +3,12 @@ baseline: spec
 	<baseline>
 
 	spec for: #'common' do: [
-		spec baseline: 'VoyageMongo' with: [
+		spec baseline: 'Voyage' with: [
 				spec repository: 'github://pharo-nosql/voyage/mc'].
 		spec baseline: 'MongoTalk' with: [
 				spec repository: 'github://pharo-nosql/mongotalk/mc'].
 		spec baseline: 'SMPP' with: [
-				spec repository: 'github://moiji-mobile/smpp-codec/mc'].
+				spec repository: 'github://ranomine/smpp-codec:pharo13/mc'].
 		spec baseline: 'StatsDClient' with: [
 				spec repository: 'github://moiji-mobile/statsd/source'].
 		spec baseline: 'OsmoLogging' with: [
@@ -25,7 +25,7 @@ baseline: spec
 					repository: 'github://svenvc/zinc/repository'].
 
 		spec package: #'ShortMessageCenter-Database' with: [
-			spec requires: #('VoyageMongo' 'MongoTalk' 'OsmoLogging') ].
+			spec requires: #('Voyage' 'MongoTalk' 'OsmoLogging') ].
 		spec package: #'ShortMessageCenter-Inserter' with: [
 			spec requires: #('ShortMessageCenter-Database' 'OsmoLogging')].
 		spec package: #'ShortMessageCenter-Delivery' with: [

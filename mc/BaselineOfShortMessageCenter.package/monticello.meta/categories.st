@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #BaselineOfShortMessageCenter!
+self packageOrganizer ensurePackage: #BaselineOfShortMessageCenter withTags: #()!
