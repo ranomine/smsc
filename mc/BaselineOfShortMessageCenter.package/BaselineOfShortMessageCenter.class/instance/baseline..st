@@ -4,45 +4,25 @@ baseline: spec
 
 	spec for: #'common' do: [
 		spec baseline: 'VoyageMongo' with: [
-				spec repository: 'github://pharo-nosql/voyage:47d4673e871f086e0be5fc3a0235e17dbf56e2ad/mc'].
+				spec repository: 'github://pharo-nosql/voyage/mc'].
 		spec baseline: 'MongoTalk' with: [
 				spec repository: 'github://pharo-nosql/mongotalk/mc'].
-		spec project: 'SMPP' with: [
+		spec baseline: 'SMPP' with: [
+				spec repository: 'github://moiji-mobile/smpp-codec/mc'].
+		spec baseline: 'StatsDClient' with: [
+				spec repository: 'github://moiji-mobile/statsd/source'].
+		spec baseline: 'OsmoLogging' with: [
+				spec repository: 'github://moiji-mobile/osmocom-logging/source'].
+		spec baseline: 'ShortMessage' with: [
+				spec repository: 'github://moiji-mobile/short-message/source'].
+		spec baseline: 'TCAP' with: [
+				spec repository: 'github://moiji-mobile/tcap/source'].
+		spec baseline: 'ASN1' with: [
+				spec repository: 'github://noha/ASN.1/src'].
+		spec baseline: 'ZincHTTPComponents' with: [
 				spec
-					className: #ConfigurationOfSMPP;
-					versionString: '10';
-					repository: 'http://smalltalkhub.com/mc/osmocom/SMPP/main/' ].
-		spec project: 'StatsDClient' with: [
-				spec
-					className: #ConfigurationOfStatsDClient;
-					versionString: '3';
-					repository: 'http://smalltalkhub.com/mc/hfreyther2/StatsD/main/' ].
-		spec project: 'OsmoLogging' with: [
-				spec
-					className: #ConfigurationOfOsmoLogging;
-					versionString: '1';
-					repository: 'http://smalltalkhub.com/mc/osmocom/Logging/main/' ].
-		spec project: 'ShortMessage' with: [
-				spec
-					className: #ConfigurationOfShortMessage;
-					versionString: '1';
-					repository: 'http://smalltalkhub.com/mc/osmocom/ShortMessage/main/' ].
-		spec project: 'TCAP' with: [
-				spec
-					className: #ConfigurationOfTCAP;
-					versionString: '9';
-					repository: 'http://smalltalkhub.com/mc/osmocom/TCAP/main' ].
-		spec project: 'ASN1' with: [
-				spec
-					className: #ConfigurationOfASN1;
-					versionString: '1';
-					repository: 'http://smalltalkhub.com/mc/NorbertHartl/ASN1/main' ].
-		spec project: 'ZincHTTPComponents' with: [
-				spec
-					className: #ConfigurationOfZincHTTPComponents;
-					versionString: #'stable';
-					loads: #('REST' );
-					repository: 'http://mc.stfx.eu/ZincHTTPComponents' ].
+					loads: #('REST');
+					repository: 'github://svenvc/zinc/repository'].
 
 		spec package: #'ShortMessageCenter-Database' with: [
 			spec requires: #('VoyageMongo' 'MongoTalk' 'OsmoLogging') ].
