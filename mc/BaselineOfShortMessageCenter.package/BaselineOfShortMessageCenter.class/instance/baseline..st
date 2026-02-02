@@ -7,7 +7,7 @@ baseline: spec
 				baseline: 'Voyage'
 				with: [ spec repository: 'github://pharo-nosql/voyage:1.5.4/mc' ].
 			spec
-				baseline: 'SMPPCodec'
+				baseline: 'SMPP'
 				with: [ spec repository: 'github://moiji-mobile/smpp-codec:v2/mc' ].
 			spec
 				baseline: 'StatsD'
