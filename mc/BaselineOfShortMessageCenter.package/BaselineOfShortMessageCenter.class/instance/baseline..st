@@ -13,7 +13,7 @@ baseline: spec
 				baseline: 'StatsD'
 				with: [ spec repository: 'github://moiji-mobile/statsd:v6/source' ].
 			spec
-				baseline: 'OsmocomLogging'
+				baseline: 'OsmoLogging'
 				with: [ spec repository: 'github://moiji-mobile/osmocom-logging:v8/source' ].
 			spec
 				baseline: 'ShortMessage'
