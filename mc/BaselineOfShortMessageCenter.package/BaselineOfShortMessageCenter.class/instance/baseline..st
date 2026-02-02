@@ -5,7 +5,7 @@ baseline: spec
 		for: #common
 		do: [ spec
 				baseline: 'Voyage'
-				with: [ spec repository: 'github://pharo-nosql/voyage:1.5.4/mc' ].
+				with: [ spec repository: 'github://pharo-nosql/voyage:v3.1/mc' ].
 			spec
 				baseline: 'SMPP'
 				with: [ spec repository: 'github://moiji-mobile/smpp-codec:v2/mc' ].
