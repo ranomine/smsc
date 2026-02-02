@@ -10,7 +10,7 @@ baseline: spec
 				baseline: 'SMPP'
 				with: [ spec repository: 'github://moiji-mobile/smpp-codec:v2/mc' ].
 			spec
-				baseline: 'StatsD'
+				baseline: 'StatsDClient'
 				with: [ spec repository: 'github://moiji-mobile/statsd:v6/source' ].
 			spec
 				baseline: 'OsmoLogging'
