@@ -25,7 +25,7 @@ baseline: spec
 			spec
 				baseline: 'ASN1'
 				with: [ spec
-						repository: 'github://noha/ASN.1:pharo7/src';
+						repository: 'github://zecke/ASN.1:v0.9_z1/src';
 						loads: #all ].
 			spec
 				baseline: 'ZincHTTPComponents'
