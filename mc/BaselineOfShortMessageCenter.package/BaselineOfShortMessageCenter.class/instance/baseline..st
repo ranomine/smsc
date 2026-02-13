@@ -4,9 +4,8 @@ baseline: spec
 	spec
 		for: #common
 		do: [ spec
-				"Use master to avoid old VoyageMongo baseline (version: #stable for Magritte not allowed in Metacello)."
 				baseline: 'Voyage'
-				with: [ spec repository: 'github://pharo-nosql/voyage:master/mc' ].
+				with: [ spec repository: 'github://pharo-nosql/voyage:v3.1/mc' ].
 			spec
 				baseline: 'SMPP'
 				with: [ spec repository: 'github://moiji-mobile/smpp-codec:v2/mc' ].
